@@ -171,7 +171,7 @@ def deletetask(request, id):
 
 ### Atualizar uma tarefa
 
-- **URL**: `/tasks/<id>/`
+- **URL**: `/updatetask/<int:id>/`
 - **Método**: `PUT`
 - **Body**:
 
@@ -193,7 +193,7 @@ def deletetask(request, id):
 
 ### Deletar uma tarefa
 
-- **URL**: `/tasks/<id>/`
+- **URL**: `/deletetask/<int:id>/`
 - **Método**: `DELETE`
 - **Resposta**:
 
@@ -210,20 +210,34 @@ def deletetask(request, id):
 ```bash
 git clone https://github.com/seu-usuario/TasklistDjango.git
 ```
+# ATENÇÃO PARA CRIAÇÃO DOS AMBIENTES VIRTUAIS, SIGA O PASSO DE UM OU OUTRO !
+2 Crie um ambiente virtual (WINDOWS):
 
-2. Instale as dependências:
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Crie um ambiente virtual (LINUX):
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+3. Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Execute as migrações:
+4. Execute as migrações:
 
 ```bash
 python manage.py migrate
 ```
 
-4. Inicie o servidor:
+5. Inicie o servidor:
 
 ```bash
 python manage.py runserver
@@ -235,3 +249,4 @@ python manage.py runserver
 
 - Esta API utiliza views simples do Django e **não** utiliza Django Rest Framework (DRF).
 - A proteção CSRF foi desativada com o decorador `@csrf_exempt` para simplificar o uso de métodos `POST`, `PUT` e `DELETE`. Em produção, considere habilitar a proteção CSRF para segurança.
+- Para facilitar o processo de testes , recomendo usar a ferramenta postman para teste,facil e prática
