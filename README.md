@@ -5,11 +5,11 @@ TasklistDjango é uma API RESTful simples desenvolvida com Django, sem o uso do 
 
 ## Funcionalidades
 
-- **Criar uma tarefa** (`POST /tasks/create/`)
-- **Listar todas as tarefas** (`GET /tasks/`)
-- **Listar uma tarefa por ID** (`GET /tasks/<id>/`)
-- **Atualizar uma tarefa** (`PUT /tasks/<id>/`)
-- **Deletar uma tarefa** (`DELETE /tasks/<id>/`)
+- **Criar uma tarefa** (`POST /cratetask/`)
+- **Listar todas as tarefas** (`GET /listtask/`)
+- **Listar uma tarefa por ID** (`GET /task/<int:id>/`)
+- **Atualizar uma tarefa** (`PUT /updatetask/<int:id>/`)
+- **Deletar uma tarefa** (`DELETE /deletetask/<int:id>/`)
 
 ## Model
 
@@ -110,7 +110,7 @@ def deletetask(request, id):
 
 ### Criar uma tarefa
 
-- **URL**: `/tasks/create/`
+- **URL**: `/createtask/`
 - **Método**: `POST`
 - **Body**:
 
@@ -133,7 +133,7 @@ def deletetask(request, id):
 
 ### Listar todas as tarefas
 
-- **URL**: `/tasks/`
+- **URL**: `/listtask/`
 - **Método**: `GET`
 - **Resposta**:
 
@@ -156,7 +156,7 @@ def deletetask(request, id):
 
 ### Listar uma tarefa por ID
 
-- **URL**: `/tasks/<id>/`
+- **URL**: `/task/<int:id>/`
 - **Método**: `GET`
 - **Resposta**:
 
