@@ -231,7 +231,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Execute as migrações:
+4. Prepare as migrações:
+
+```bash
+python manage.py makemigrations
+```
+5. Execute as migrações:
 
 ```bash
 python manage.py migrate
