@@ -254,4 +254,4 @@ python manage.py runserver
 
 - Esta API utiliza views simples do Django e **não** utiliza Django Rest Framework (DRF).
 - A proteção CSRF foi desativada com o decorador `@csrf_exempt` para simplificar o uso de métodos `POST`, `PUT` e `DELETE`. Em produção, considere habilitar a proteção CSRF para segurança.
-- Para facilitar o processo de testes , recomendo usar a ferramenta postman para teste,facil e prática
+- Para facilitar o processo de testes , recomendo usar a ferramenta postman
