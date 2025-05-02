@@ -1,7 +1,7 @@
 
 # TasklistDjango API
 
-TasklistDjango é uma API RESTful simples desenvolvida com Django, sem o uso do Django Rest Framework (DRF). Esta API permite criar, listar, atualizar e deletar tarefas.
+TasklistDjango é uma API  simples desenvolvida com Django, sem o uso do Django Rest Framework (DRF). Esta API permite criar, listar, atualizar e deletar tarefas.
 
 ## Funcionalidades
 
